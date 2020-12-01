@@ -1,0 +1,56 @@
+@import "../../../../../../assets/styles/theme";
+.dnd-board{
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  .dnd-board-data{
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    .board{
+      border-radius: $md;
+      height: 74vh;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      .droppable-card{
+        min-height: 23vh;
+        max-height: 28vh;
+        box-sizing: border-box;
+        position: relative;
+        .task-description{
+          font-size: 13px;
+        }
+        .dnd-footer{
+          position: absolute;
+          left: 0;
+          bottom: $md;
+          width: 100%;
+          box-sizing: border-box;
+          .task-due-date{
+            border-radius: $md;
+            padding: $xs $md;
+            text-align: center;
+            background: $warning-color;
+            box-sizing: border-box;
+          }
+          .task-point{
+            width: 100px;
+            margin-right: $xs;
+            border-radius: $md;
+            padding: $xs;
+            text-align: center;
+            background: $btn-hover;
+            box-sizing: border-box;
+            &:nth-child(2n){
+              background: $secondary-color;
+            }
+            &:nth-child(3n){
+              background: $success-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

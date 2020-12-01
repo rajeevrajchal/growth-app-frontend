@@ -1,0 +1,35 @@
+.toaster{
+  position: fixed;
+  z-index: 99;
+  padding: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  &.success {
+    background: #4CAF50;
+    color: #e2e2e2;
+  }
+
+  &.error {
+    background: #F44336;
+    color: #e2e2e2;
+  }
+  &.bottom-right{
+    bottom:8vh;
+    right: 35px;
+  }
+  &.top-right{
+    top:8vh;
+    right: 35px;
+  }
+  &.on {
+    transform: translateY(80%);
+    opacity: 1;
+  }
+
+  &.off {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+
+}

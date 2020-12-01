@@ -1,0 +1,61 @@
+@import "src/assets/styles/theme";
+
+.board {
+  flex: 1;
+  height: 100%;
+  margin-right: $md;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .dragdrop-card {
+    position: relative;
+    box-sizing: border-box;
+    transition: transform .2s;
+    &:hover{
+      box-shadow: 5px 5px 16px rgba(3, 3, 3, 0.12);
+    }
+    .folder-action-popup {
+      flex: 1;
+      background-color: $button-color;
+      color: $dark-color;
+      text-align: center;
+      border-radius: $sm;
+      padding: $sm;
+      position: absolute;
+      right: $sm;
+      top: $md;
+      z-index: 1;
+
+      .folder-action-buttons {
+        text-align: left;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .no-actions {
+    position: relative;
+    box-sizing: border-box;
+
+    .tooltip-text {
+      visibility: hidden;
+      width: 200px;
+      background-color: $button-color;
+      color: $dark-color;
+      text-align: center;
+      border-radius: $sm;
+      padding: $sm;
+      position: absolute;
+      bottom: -15px;
+      right: 5px;
+      z-index: 1;
+    }
+
+    &:hover .tooltip-text {
+      visibility: visible;
+    }
+  }
+}

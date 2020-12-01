@@ -1,0 +1,346 @@
+@import "layout.scss";
+
+//anchor link
+a {
+  color: $dark-color;
+  text-decoration: none;
+}
+
+.alight {
+  color: $light-color;
+  text-decoration: none;
+}
+
+//text styles
+.title {
+  font-size: $lg;
+  font-weight: bold;
+  font-family: $title-font;
+}
+
+.sub-title {
+  font-size: $md;
+  font-family: $title-font;
+}
+
+.description {
+  font-size: $md;
+  font-family: $title-font;
+}
+
+.light-text {
+  color: $light-color;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-light {
+  color: $light-color;
+}
+
+.text-success {
+  color: $success-color;
+}
+
+.text-danger {
+  color: $danger-color;
+}
+
+.text-info {
+  color: $info-color;
+}
+
+.text-warning {
+  color: $warning-color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.letter-spacing {
+  letter-spacing: 2px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+//images
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+//buttons
+
+.btn {
+  padding: $sm $lg;
+  border-radius: $xs;
+  background: rgba(0, 0, 0, 0.12);
+  border: none;
+  color: $text-color;
+  min-width: 7vw;
+  font-family: $title-font;
+  font-size: $md;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:active {
+    transform: translateY(1px);
+
+  }
+
+  &:active, &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+
+  &.primary {
+    background: $primary-color;
+    color: $light-color;
+    font-family: $title-font;
+  }
+
+  &.secondary {
+    background: $secondary-color;
+    color: $light-color;
+    font-family: $title-font;
+  }
+
+  &.light {
+    background: $light-color;
+    color: $primary-color;
+  }
+
+  &.success {
+    background: $success-color;
+    color: $light-color;
+  }
+
+  &.danger {
+    background: $danger-color;
+    color: $light-color;
+  }
+
+  &.info {
+    background: $info-color;
+    color: $light-color;
+  }
+
+  &.warning {
+    background: $warning-color;
+    color: $light-color;
+  }
+
+  &.outlined.primary {
+    border: 1px solid $primary-color;
+    background: transparent;
+    color: $primary-color;
+
+    &:hover {
+      background: $btn-hover;
+      color: $light-color;
+    }
+  }
+
+  &.outlined.secondary {
+    border: 1px solid $secondary-color;
+    background: transparent;
+    color: $secondary-color;
+
+    &:hover {
+      background: $secondary-color;
+      color: $light-color;
+    }
+  }
+
+  &.outlined.light {
+    border: 1px solid $light-color;
+    background: transparent;
+    color: $light-color;
+
+    &:hover {
+      background: $light-color;
+      color: $light-color;
+    }
+  }
+
+  &.outlined.success {
+    border: 1px solid $success-color;
+    background: transparent;
+    color: $success-color;
+
+    &:hover {
+      background: $success-color;
+      color: $light-color;
+    }
+  }
+
+  &.outlined.danger {
+    border: 1px solid $danger-color;
+    background: transparent;
+    color: $danger-color;
+
+    &:hover {
+      background: $danger-color;
+      color: $light-color;
+    }
+  }
+
+  &.outlined.info {
+    border: 1px solid $info-color;
+    background: transparent;
+    color: $info-color;
+
+    &:hover {
+      background: $info-color;
+      color: $light-color;
+    }
+  }
+
+  &.outlined.warning {
+    border: 1px solid $warning-color;
+    background: transparent;
+    color: $warning-color;
+
+    &:hover {
+      background: $warning-color;
+      color: $light-color;
+    }
+  }
+}
+
+//background
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+  color: $light-color;
+}
+
+//cards
+.card, %card {
+  border-radius: $sm;
+  padding: $md;
+  background: $light-color;
+}
+
+//shadow
+.elevated {
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+//cursor
+.pointer {
+  cursor: pointer;
+}
+
+/* width */
+.w-10 {
+  width: 25vw;
+}
+
+.w-7 {
+  width: 7vw;
+}
+
+.w-8 {
+  width: 9vw;
+}
+
+.w-20 {
+  width: 20vw;
+}
+
+.w-30 {
+  width: 30vw;
+}
+
+.w-2 {
+  width: 2vw;
+}
+
+.w-80 {
+  width: 80vw;
+}
+
+//logo
+.logo {
+  width: 80px;
+}
+
+.focus-none {
+  outline: none;
+  user-focus: none;
+}
+
+//form
+
+.input-group {
+  margin-top: $md;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-bottom: $md;
+  }
+
+  .input-box {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    border-radius: $sm;
+    background: $input-color;
+    box-sizing: border-box;
+
+    i {
+      padding-left: $sm;
+    }
+
+    input, select, textarea {
+      border: none;
+      width: 100%;
+      background: transparent;
+      padding: $md;
+      outline: none;
+      &::placeholder {
+        color: $secondary-dark-color;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
